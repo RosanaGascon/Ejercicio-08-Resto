@@ -1,5 +1,5 @@
 // Cargar los artículos del menú desde el archivo JSON
-fetch(`./js/menuItems.json?timestamp=${new Date().getTime()}`)
+fetch('https://rosanagascon.github.io/Ejercicio-08-Resto/js/menuItems.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error en la red: ' + response.statusText);
