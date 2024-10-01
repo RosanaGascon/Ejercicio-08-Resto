@@ -1,5 +1,5 @@
 // Cargar los artículos del menú desde el archivo JSON
-fetch('./js/menuItems.json')
+fetch(`./js/menuItems.json?timestamp=${new Date().getTime()}`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Error en la red: ' + response.statusText);
