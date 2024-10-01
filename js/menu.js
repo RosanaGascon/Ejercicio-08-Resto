@@ -1,5 +1,5 @@
 // Cargar los artículos del menú desde el archivo JSON
-fetch('https://github.com/RosanaGascon/Ejercicio-08-Resto/blob/f4e5967f48aa885e0c640342ef5a4a3551bf4949/js/menuItems.json')
+fetch('https://raw.githubusercontent.com/RosanaGascon/Ejercicio-08-Resto/refs/heads/main/js/menuItems.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error en la red: ' + response.statusText);
